@@ -1,0 +1,19 @@
+.list-group {
+  cursor: pointer;
+  span {
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .btn-group {
+    opacity: 0;
+  }
+  .list-group-item:hover .btn-group {
+    opacity: 1;
+  }
+  .complete {
+    text-decoration: line-through;
+    text-decoration-color: #ff0000;
+  }
+}
