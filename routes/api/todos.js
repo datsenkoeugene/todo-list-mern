@@ -29,10 +29,10 @@ router.put('/:id', async (req, res) => {
   res.status(200).json(id)
 })
 
-// router.put('/', async (req, res) => { 
-//   await Todo.findOneAndUpdate({ title: req.body.oldTitle }, {title: req.body.newTitle}, {returnOriginal: false})
-//   const todos = await Todo.find({})
-//   res.status(200).json(todos)
-// })
+router.put('/', async (req, res) => { 
+  await Todo.findOneAndUpdate({ title: req.body.oldTitle }, {title: req.body.newTitle}, {returnOriginal: false})
+  const todos = await Todo.find({})
+  res.status(200).json(todos)
+})
 
 module.exports = router
